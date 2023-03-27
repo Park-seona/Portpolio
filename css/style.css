@@ -1,0 +1,373 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+ul,li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+img {
+    vertical-align: top;
+    border: 0;
+}
+body {
+    color: #000000;
+}
+
+/* 레이아웃 */
+.wrap {
+    width: 1920px;
+    margin: 0 auto;
+}
+header {
+    width: 100%;
+    height: 1080px;
+    position: relative;
+    z-index: 10;
+    background-color: rgba(229, 240, 224, 0.6);
+}
+header .header_box {
+    width: 100%;
+    height: 1080px;
+    position: relative;
+}
+header .header_box h1 {
+    float: left;
+    width: 65px;
+    height: 64px;
+}
+header .header_box h1 img {
+    position: absolute;
+    left: 72px;
+    top: 12px;
+    width: 65px;
+    height: 64px;
+}
+header .header_box h1 img:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+}
+header nav {
+    float: right;
+    width: 830px;
+    padding-top: 29px;
+    padding-right: 406px;
+}
+header .header_box ul.gnb {
+    width: 100%;
+    text-align: center;
+}
+header .header_box ul.gnb>li {
+    float: left;
+    width: 10%;
+    position: relative;
+    padding-right: 50px;
+}
+header .header_box ul.gnb>li>a {
+    display: block;
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    font-size: 17px;
+    color: #9BA695;
+    box-sizing: border-box;
+    border-left: 0;
+}
+header .header_box ul.gnb>li:hover>a {
+    font-size: 17px;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: #9BA695;
+}
+header .personal_box {
+    position: absolute;
+    left: 193px;
+    top: 318px;
+    width: 320px;
+    height: 540px;
+    background-color: rgba(195, 211, 187, 0.6);
+    box-shadow: 3px 3px 3px rgba(10, 77, 66, 0.3);
+}
+header .personal_box ul.number1 {
+    position: absolute;
+    left: 233px;
+    top: 24px;
+}
+header .personal_box ul.number1 li {
+    font-size: 40px;
+    color: #fff;
+}
+header .personal_box h2 {
+    padding-left: 13px;
+    padding-top: 329px;
+}
+header .personal_box hr {
+    position: absolute;
+    left: 12px;
+    top: 402px;
+}
+header .personal_box ul.personal_txt {
+    position: absolute;
+    left: 12px;
+    top: 423px;
+}
+header .personal_box ul.personal_txt li {
+    font-size: 15px;
+}
+header .personal_box .personal_btn {
+    position: absolute;
+    left: 38px;
+    top: 474px;
+    width: 240px;
+    height: 42px;
+    background-color: rgba(195, 211, 187, 0.6);
+    border: 2px solid #27483E;
+    cursor: pointer;
+}
+header .personal_box .personal_btn:hover {
+    background-color: #27483E;
+    color: #fff;
+}
+header .renewal_box {
+    position: absolute;
+    left: 606px;
+    top: 318px;
+    width: 320px;
+    height: 540px;
+    background-color: rgba(195, 211, 187, 0.6);
+    box-shadow: 3px 3px 3px rgba(10, 77, 66, 0.3);
+}
+header .renewal_box ul.number2 {
+    position: absolute;
+    left: 233px;
+    top: 24px;
+}
+header .renewal_box ul.number2 li {
+    font-size: 40px;
+    color: #fff;
+}
+header .renewal_box ul.renewal_img {
+    position: absolute;
+    left: 24px;
+    top: 118px;
+}
+header .renewal_box h2 {
+    padding-left: 13px;
+    padding-top: 329px;
+}
+header .renewal_box hr {
+    position: absolute;
+    left: 12px;
+    top: 402px;
+}
+header .renewal_box ul.renewal_txt {
+    position: absolute;
+    left: 12px;
+    top: 423px;
+}
+header .renewal_box ul.renewal_txt li {
+    font-size: 15px;
+}
+header .renewal_box .renewal_btn {
+    position: absolute;
+    left: 21px;
+    top: 474px;
+    width: 132px;
+    height: 41px;
+    background-color: rgba(195, 211, 187, 0.6);
+    border: 2px solid #575757;
+    cursor: pointer;
+}
+header .renewal_box .renewal_btn:hover {
+    background-color: #575757;
+    color: #fff;
+}
+header .renewal_box .renewal2_btn {
+    position: absolute;
+    left: 163px;
+    top: 474px;
+    width: 132px;
+    height: 41px;
+    background-color: rgba(195, 211, 187, 0.6);
+    border: 2px solid #575757;
+    cursor: pointer;
+}
+header .renewal_box .renewal2_btn:hover {
+    background-color: #575757;
+    color: #fff;
+}
+header .renewal_box .green_box {
+    position: absolute;
+    left: 18px;
+    top: 110px;
+    width: 280px;
+    height: 160px;
+    background-color: #27483E;
+    border-radius: 10px;
+}
+header .renewal_box .renewal_img {
+    position: absolute;
+    left: 23px;
+    top: 115px;
+}
+header .renewal_box .renewal_img img {
+    width: 270px;
+    height: 150px;
+    border-radius: 10px;
+}
+header .mobile_box {
+    position: absolute;
+    left: 1019px;
+    top: 318px;
+    width: 320px;
+    height: 540px;
+    background-color: rgba(195, 211, 187, 0.6);
+    box-shadow: 3px 3px 3px rgba(10, 77, 66, 0.3);
+}
+header .mobile_box ul.number3 {
+    position: absolute;
+    left: 233px;
+    top: 24px;
+}
+header .mobile_box ul.number3 li {
+    font-size: 40px;
+    color: #fff;
+}
+header .mobile_box ul.mobile_img {
+    position: absolute;
+    left: 68px;
+    top: 121px;
+}
+header .mobile_box ul.mobile2_img {
+    position: absolute;
+    left: 184px;
+    top: 121px;
+}
+header .mobile_box h2 {
+    position: absolute;
+    left: 13px;
+    top: 329px;
+}
+header .mobile_box hr {
+    position: absolute;
+    left: 12px;
+    top: 402px;
+}
+header .mobile_box ul.mobile_txt {
+    position: absolute;
+    left: 12px;
+    top: 423px;
+}
+header .mobile_box ul.mobile_txt li {
+    font-size: 15px;
+}
+header .mobile_box .mobile_btn {
+    position: absolute;
+    left: 21px;
+    top: 474px;
+    width: 132px;
+    height: 41px;
+    background-color: rgba(195, 211, 187, 0.6);
+    border: 2px solid #84B5FF;
+    cursor: pointer;
+}
+header .mobile_box .mobile_btn:hover {
+    background-color: #84B5FF;
+    color: #fff;
+}
+header .mobile_box .mobile2_btn {
+    position: absolute;
+    left: 163px;
+    top: 474px;
+    width: 132px;
+    height: 41px;
+    background-color: rgba(195, 211, 187, 0.6);
+    border: 2px solid #84B5FF;
+    cursor: pointer;
+}
+header .mobile_box .mobile2_btn:hover {
+    background-color: #84B5FF;
+    color: #fff;
+}
+header .mobile_box .green_box1 {
+    position: absolute;
+    left: 63px;
+    top: 110px;
+    width: 80px;
+    height: 170px;
+    background-color: #27483E;
+    border-radius: 13px;
+}
+header .mobile_box .gray_box1 {
+    position: absolute;
+    left: 92px;
+    top: 115px;
+    width: 16px;
+    height: 2px;
+    background-color: #C5C5C5;
+    border-radius: 2px;
+}
+header .mobile_box .gray_cir1 {
+    position: absolute;
+    left: 112px;
+    top: 115px;
+    width: 2px;
+    height: 2px;
+    background-color: #C5C5C5;
+    border-radius: 50%;
+}
+header .mobile_box .mobile_img1 {
+    position: absolute;
+    left: 66px;
+    top: 114px;
+}
+header .mobile_box .mobile_img1 img {
+    width: 74px;
+    height: 163px;
+}
+header .mobile_box .green_box2 {
+    position: absolute;
+    left: 173px;
+    top: 110px;
+    width: 80px;
+    height: 170px;
+    background-color: #27483E;
+    border-radius: 13px;
+}
+header .mobile_box .gray_box2 {
+    position: absolute;
+    left: 202px;
+    top: 115px;
+    width: 16px;
+    height: 2px;
+    background-color: #C5C5C5;
+    border-radius: 2px;
+}
+header .mobile_box .gray_cir2 {
+    position: absolute;
+    left: 222px;
+    top: 115px;
+    width: 2px;
+    height: 2px;
+    background-color: #C5C5C5;
+    border-radius: 50%;
+}
+header .mobile_box .mobile_img2 {
+    position: absolute;
+    left: 176px;
+    top: 114px;
+}
+header .mobile_box .mobile_img2 img {
+    width: 74px;
+    height: 163px;
+}
