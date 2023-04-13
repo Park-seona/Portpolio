@@ -126,9 +126,9 @@ header .personal_box ul.personal_txt li {
 }
 header .personal_box .personal_btn {
     position: absolute;
-    left: 38px;
+    left: 23px;
     top: 474px;
-    width: 240px;
+    width: 270px;
     height: 42px;
     background-color: rgba(195, 211, 187, 0.6);
     border: 2px solid #27483E;
@@ -273,29 +273,15 @@ header .mobile_box ul.mobile_txt li {
 }
 header .mobile_box .mobile_btn {
     position: absolute;
-    left: 21px;
+    left: 23px;
     top: 474px;
-    width: 132px;
-    height: 41px;
+    width: 270px;
+    height: 42px;
     background-color: rgba(195, 211, 187, 0.6);
     border: 2px solid #84B5FF;
     cursor: pointer;
 }
 header .mobile_box .mobile_btn:hover {
-    background-color: #84B5FF;
-    color: #fff;
-}
-header .mobile_box .mobile2_btn {
-    position: absolute;
-    left: 163px;
-    top: 474px;
-    width: 132px;
-    height: 41px;
-    background-color: rgba(195, 211, 187, 0.6);
-    border: 2px solid #84B5FF;
-    cursor: pointer;
-}
-header .mobile_box .mobile2_btn:hover {
     background-color: #84B5FF;
     color: #fff;
 }
