@@ -357,3 +357,83 @@ header .mobile_box .mobile_img2 img {
     width: 74px;
     height: 163px;
 }
+
+
+header .event_box {
+    position: absolute;
+    left: 1421px;
+    top: 318px;
+    width: 320px;
+    height: 540px;
+    background-color: rgba(195, 211, 187, 0.6);
+    box-shadow: 3px 3px 3px rgba(10, 77, 66, 0.3);
+}
+header .event_box ul.number4 {
+    position: absolute;
+    left: 233px;
+    top: 24px;
+}
+header .event_box ul.number4 li {
+    font-size: 40px;
+    color: #fff;
+}
+header .event_box ul.event_img {
+    position: absolute;
+    left: 68px;
+    top: 121px;
+}
+header .event_box ul.event_img {
+    position: absolute;
+    left: 184px;
+    top: 121px;
+}
+header .event_box h2 {
+    position: absolute;
+    left: 13px;
+    top: 329px;
+}
+header .event_box hr {
+    position: absolute;
+    left: 12px;
+    top: 402px;
+}
+header .event_box ul.event_txt {
+    position: absolute;
+    left: 12px;
+    top: 423px;
+}
+header .event_box ul.event_txt li {
+    font-size: 15px;
+}
+header .event_box .event_btn {
+    position: absolute;
+    left: 23px;
+    top: 474px;
+    width: 270px;
+    height: 42px;
+    background-color: rgba(195, 211, 187, 0.6);
+    border: 2px solid #FC2BCB;
+    cursor: pointer;
+}
+header .event_box .event_btn:hover {
+    background-color: #FC2BCB;
+    color: #fff;
+}
+header .event_box .green_box {
+    position: absolute;
+    left: 18px;
+    top: 110px;
+    width: 280px;
+    height: 160px;
+    background-color: #27483E;
+    border-radius: 10px;
+}
+header .event_box .event_img {
+    position: absolute;
+    left: px;
+    top: px;
+}
+header .event_box .event_img img {
+    width: px;
+    height: px;
+}
