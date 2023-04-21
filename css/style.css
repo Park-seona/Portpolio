@@ -91,7 +91,7 @@ header .header_box ul.gnb>li:hover>a {
 }
 header .personal_box {
     position: absolute;
-    left: 193px;
+    left: 173px;
     top: 318px;
     width: 320px;
     height: 540px;
@@ -140,7 +140,7 @@ header .personal_box .personal_btn:hover {
 }
 header .renewal_box {
     position: absolute;
-    left: 606px;
+    left: 586px;
     top: 318px;
     width: 320px;
     height: 540px;
@@ -227,7 +227,7 @@ header .renewal_box .renewal_img img {
 }
 header .mobile_box {
     position: absolute;
-    left: 1019px;
+    left: 999px;
     top: 318px;
     width: 320px;
     height: 540px;
@@ -361,7 +361,7 @@ header .mobile_box .mobile_img2 img {
 
 header .event_box {
     position: absolute;
-    left: 1421px;
+    left: 1401px;
     top: 318px;
     width: 320px;
     height: 540px;
