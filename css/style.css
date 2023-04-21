@@ -107,6 +107,20 @@ header .personal_box ul.number1 li {
     font-size: 40px;
     color: #fff;
 }
+header .personal_box .green_box {
+    position: absolute;
+    left: 18px;
+    top: 110px;
+    width: 280px;
+    height: 160px;
+    background-color: #27483E;
+    border-radius: 10px;
+}
+header .personal_box .main_img {
+    position: absolute;
+    left: 23px;
+    top: 115px;
+}
 header .personal_box h2 {
     padding-left: 13px;
     padding-top: 329px;
@@ -430,10 +444,6 @@ header .event_box .green_box {
 }
 header .event_box .event_img {
     position: absolute;
-    left: px;
-    top: px;
-}
-header .event_box .event_img img {
-    width: px;
-    height: px;
+    left: 23px;
+    top: 115px;
 }
