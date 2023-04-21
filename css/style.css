@@ -116,7 +116,7 @@ header .personal_box .green_box {
     background-color: #27483E;
     border-radius: 10px;
 }
-header .personal_box .main_img {
+header .personal_box .main_img img{
     position: absolute;
     left: 23px;
     top: 115px;
@@ -442,7 +442,7 @@ header .event_box .green_box {
     background-color: #27483E;
     border-radius: 10px;
 }
-header .event_box .event_img {
+header .event_box .event_img img{
     position: absolute;
     left: 23px;
     top: 115px;
