@@ -51,11 +51,14 @@ header .header_box h1 img {
     top: 12px;
     width: 65px;
     height: 64px;
+    z-index: 10;
+    /* transition: all 0.5s linear; */
 }
 header .header_box h1 img:hover {
     -ms-transform: scale(1.1); /* IE 9 */
     -webkit-transform: scale(1.1); /* Safari 3-8 */
     transform: scale(1.1); 
+    /* transform: rotate(720deg); */
 }
 header nav {
     float: right;
@@ -72,6 +75,7 @@ header .header_box ul.gnb>li {
     width: 10%;
     position: relative;
     padding-right: 50px;
+    z-index: 10;
 }
 header .header_box ul.gnb>li>a {
     display: block;
@@ -89,25 +93,39 @@ header .header_box ul.gnb>li:hover>a {
     text-underline-position: under;
     text-decoration-color: #9BA695;
 }
-header .personal_box {
+.swiper-container { 
+    padding-top: 258px;
+    position: relative;
+    width: 1550px;
+    margin: 0 auto;
+    height: 600px;
+    overflow: hidden;
+}
+.swiper-wrapper {
     position: absolute;
-    left: 173px;
-    top: 318px;
+    left: 0;
+    top: 0;
+}
+.swiper-wrapper .swiper-slide .slide-box {
+    position: relative;
     width: 320px;
     height: 540px;
     background-color: rgba(195, 211, 187, 0.6);
     box-shadow: 3px 3px 3px rgba(10, 77, 66, 0.3);
 }
-header .personal_box ul.number1 {
+.swiper-wrapper .swiper-slide .slide-box:not(:last-child) {
+    float: left;
+}
+.swiper-wrapper .swiper-slide .slide-box ul.number {
     position: absolute;
     left: 233px;
     top: 24px;
 }
-header .personal_box ul.number1 li {
+.swiper-wrapper .swiper-slide .slide-box ul.number li {
     font-size: 40px;
     color: #fff;
 }
-header .personal_box .green_box {
+.swiper-wrapper .swiper-slide .slide-box .green_box {
     position: absolute;
     left: 18px;
     top: 110px;
@@ -116,29 +134,50 @@ header .personal_box .green_box {
     background-color: #27483E;
     border-radius: 10px;
 }
-header .personal_box .main_img img{
+.swiper-wrapper .swiper-slide .slide-box .green_box1 {
     position: absolute;
-    left: 23px;
-    top: 115px;
+    left: 63px;
+    top: 110px;
+    width: 80px;
+    height: 170px;
+    background-color: #27483E;
+    border-radius: 13px;
 }
-header .personal_box h2 {
-    padding-left: 13px;
-    padding-top: 329px;
+.swiper-wrapper .swiper-slide .slide-box .green_box2 {
+    position: absolute;
+    left: 173px;
+    top: 110px;
+    width: 80px;
+    height: 170px;
+    background-color: #27483E;
+    border-radius: 13px;
 }
-header .personal_box hr {
+.swiper-wrapper .swiper-slide .slide-box h2 {
+    position: absolute;
+    left: 13px;
+    top: 329px;
+}
+.swiper-wrapper .swiper-slide .slide-box .hr1 {
     position: absolute;
     left: 12px;
     top: 402px;
 }
-header .personal_box ul.personal_txt {
+.swiper-wrapper .swiper-slide .slide-box .hr2 {
     position: absolute;
     left: 12px;
-    top: 423px;
+    top: 402px;
 }
-header .personal_box ul.personal_txt li {
-    font-size: 15px;
+.swiper-wrapper .swiper-slide .slide-box .hr3 {
+    position: absolute;
+    left: 12px;
+    top: 402px;
 }
-header .personal_box .personal_btn {
+.swiper-wrapper .swiper-slide .slide-box .hr4 {
+    position: absolute;
+    left: 12px;
+    top: 402px;
+}
+.swiper-wrapper .swiper-slide .slide-box .personal_btn {
     position: absolute;
     left: 23px;
     top: 474px;
@@ -148,51 +187,11 @@ header .personal_box .personal_btn {
     border: 2px solid #27483E;
     cursor: pointer;
 }
-header .personal_box .personal_btn:hover {
+.swiper-wrapper .swiper-slide .slide-box .personal_btn:hover {
     background-color: #27483E;
     color: #fff;
 }
-header .renewal_box {
-    position: absolute;
-    left: 586px;
-    top: 318px;
-    width: 320px;
-    height: 540px;
-    background-color: rgba(195, 211, 187, 0.6);
-    box-shadow: 3px 3px 3px rgba(10, 77, 66, 0.3);
-}
-header .renewal_box ul.number2 {
-    position: absolute;
-    left: 233px;
-    top: 24px;
-}
-header .renewal_box ul.number2 li {
-    font-size: 40px;
-    color: #fff;
-}
-header .renewal_box ul.renewal_img {
-    position: absolute;
-    left: 24px;
-    top: 118px;
-}
-header .renewal_box h2 {
-    padding-left: 13px;
-    padding-top: 329px;
-}
-header .renewal_box hr {
-    position: absolute;
-    left: 12px;
-    top: 402px;
-}
-header .renewal_box ul.renewal_txt {
-    position: absolute;
-    left: 12px;
-    top: 423px;
-}
-header .renewal_box ul.renewal_txt li {
-    font-size: 15px;
-}
-header .renewal_box .renewal_btn {
+.swiper-wrapper .swiper-slide .slide-box .renewal_btn {
     position: absolute;
     left: 21px;
     top: 474px;
@@ -202,11 +201,11 @@ header .renewal_box .renewal_btn {
     border: 2px solid #575757;
     cursor: pointer;
 }
-header .renewal_box .renewal_btn:hover {
+.swiper-wrapper .swiper-slide .slide-box .renewal_btn:hover {
     background-color: #575757;
     color: #fff;
 }
-header .renewal_box .renewal2_btn {
+.swiper-wrapper .swiper-slide .slide-box .renewal2_btn {
     position: absolute;
     left: 163px;
     top: 474px;
@@ -216,76 +215,11 @@ header .renewal_box .renewal2_btn {
     border: 2px solid #575757;
     cursor: pointer;
 }
-header .renewal_box .renewal2_btn:hover {
+.swiper-wrapper .swiper-slide .slide-box .renewal2_btn:hover {
     background-color: #575757;
     color: #fff;
 }
-header .renewal_box .green_box {
-    position: absolute;
-    left: 18px;
-    top: 110px;
-    width: 280px;
-    height: 160px;
-    background-color: #27483E;
-    border-radius: 10px;
-}
-header .renewal_box .renewal_img {
-    position: absolute;
-    left: 23px;
-    top: 115px;
-}
-header .renewal_box .renewal_img img {
-    width: 270px;
-    height: 150px;
-    border-radius: 10px;
-}
-header .mobile_box {
-    position: absolute;
-    left: 999px;
-    top: 318px;
-    width: 320px;
-    height: 540px;
-    background-color: rgba(195, 211, 187, 0.6);
-    box-shadow: 3px 3px 3px rgba(10, 77, 66, 0.3);
-}
-header .mobile_box ul.number3 {
-    position: absolute;
-    left: 233px;
-    top: 24px;
-}
-header .mobile_box ul.number3 li {
-    font-size: 40px;
-    color: #fff;
-}
-header .mobile_box ul.mobile_img {
-    position: absolute;
-    left: 68px;
-    top: 121px;
-}
-header .mobile_box ul.mobile2_img {
-    position: absolute;
-    left: 184px;
-    top: 121px;
-}
-header .mobile_box h2 {
-    position: absolute;
-    left: 13px;
-    top: 329px;
-}
-header .mobile_box hr {
-    position: absolute;
-    left: 12px;
-    top: 402px;
-}
-header .mobile_box ul.mobile_txt {
-    position: absolute;
-    left: 12px;
-    top: 423px;
-}
-header .mobile_box ul.mobile_txt li {
-    font-size: 15px;
-}
-header .mobile_box .mobile_btn {
+.swiper-wrapper .swiper-slide .slide-box .mobile_btn {
     position: absolute;
     left: 23px;
     top: 474px;
@@ -295,131 +229,11 @@ header .mobile_box .mobile_btn {
     border: 2px solid #84B5FF;
     cursor: pointer;
 }
-header .mobile_box .mobile_btn:hover {
+.swiper-wrapper .swiper-slide .slide-box .mobile_btn:hover {
     background-color: #84B5FF;
     color: #fff;
 }
-header .mobile_box .green_box1 {
-    position: absolute;
-    left: 63px;
-    top: 110px;
-    width: 80px;
-    height: 170px;
-    background-color: #27483E;
-    border-radius: 13px;
-}
-header .mobile_box .gray_box1 {
-    position: absolute;
-    left: 92px;
-    top: 115px;
-    width: 16px;
-    height: 2px;
-    background-color: #C5C5C5;
-    border-radius: 2px;
-}
-header .mobile_box .gray_cir1 {
-    position: absolute;
-    left: 112px;
-    top: 115px;
-    width: 2px;
-    height: 2px;
-    background-color: #C5C5C5;
-    border-radius: 50%;
-}
-header .mobile_box .mobile_img1 {
-    position: absolute;
-    left: 66px;
-    top: 114px;
-}
-header .mobile_box .mobile_img1 img {
-    width: 74px;
-    height: 163px;
-}
-header .mobile_box .green_box2 {
-    position: absolute;
-    left: 173px;
-    top: 110px;
-    width: 80px;
-    height: 170px;
-    background-color: #27483E;
-    border-radius: 13px;
-}
-header .mobile_box .gray_box2 {
-    position: absolute;
-    left: 202px;
-    top: 115px;
-    width: 16px;
-    height: 2px;
-    background-color: #C5C5C5;
-    border-radius: 2px;
-}
-header .mobile_box .gray_cir2 {
-    position: absolute;
-    left: 222px;
-    top: 115px;
-    width: 2px;
-    height: 2px;
-    background-color: #C5C5C5;
-    border-radius: 50%;
-}
-header .mobile_box .mobile_img2 {
-    position: absolute;
-    left: 176px;
-    top: 114px;
-}
-header .mobile_box .mobile_img2 img {
-    width: 74px;
-    height: 163px;
-}
-
-
-header .event_box {
-    position: absolute;
-    left: 1401px;
-    top: 318px;
-    width: 320px;
-    height: 540px;
-    background-color: rgba(195, 211, 187, 0.6);
-    box-shadow: 3px 3px 3px rgba(10, 77, 66, 0.3);
-}
-header .event_box ul.number4 {
-    position: absolute;
-    left: 233px;
-    top: 24px;
-}
-header .event_box ul.number4 li {
-    font-size: 40px;
-    color: #fff;
-}
-header .event_box ul.event_img {
-    position: absolute;
-    left: 68px;
-    top: 121px;
-}
-header .event_box ul.event_img {
-    position: absolute;
-    left: 184px;
-    top: 121px;
-}
-header .event_box h2 {
-    position: absolute;
-    left: 13px;
-    top: 329px;
-}
-header .event_box hr {
-    position: absolute;
-    left: 12px;
-    top: 402px;
-}
-header .event_box ul.event_txt {
-    position: absolute;
-    left: 12px;
-    top: 423px;
-}
-header .event_box ul.event_txt li {
-    font-size: 15px;
-}
-header .event_box .event_btn {
+.swiper-wrapper .swiper-slide .slide-box .event_btn {
     position: absolute;
     left: 23px;
     top: 474px;
@@ -429,21 +243,107 @@ header .event_box .event_btn {
     border: 2px solid #FC2BCB;
     cursor: pointer;
 }
-header .event_box .event_btn:hover {
+.swiper-wrapper .swiper-slide .slide-box .event_btn:hover {
     background-color: #FC2BCB;
     color: #fff;
 }
-header .event_box .green_box {
+.swiper-wrapper .swiper-slide .slide-box .personal_txt {
     position: absolute;
-    left: 18px;
-    top: 110px;
-    width: 280px;
-    height: 160px;
-    background-color: #27483E;
-    border-radius: 10px;
+    left: 12px;
+    top: 423px;
 }
-header .event_box .event_img img{
+.swiper-wrapper .swiper-slide .slide-box .personal_txt li {
+    font-size: 15px;
+}
+
+.swiper-wrapper .swiper-slide .slide-box .renewal_txt {
+    position: absolute;
+    left: 12px;
+    top: 423px;
+}
+.swiper-wrapper .swiper-slide .slide-box .renewal_txt li {
+    font-size: 15px;
+}
+
+.swiper-wrapper .swiper-slide .slide-box .mobile_txt {
+    position: absolute;
+    left: 12px;
+    top: 423px;
+}
+.swiper-wrapper .swiper-slide .slide-box .mobile_txt li {
+    font-size: 15px;
+}
+
+.swiper-wrapper .swiper-slide .slide-box .event_txt {
+    position: absolute;
+    left: 12px;
+    top: 423px;
+}
+.swiper-wrapper .swiper-slide .slide-box .event_txt li {
+    font-size: 15px;
+}
+.swiper-wrapper .swiper-slide .slide-box .main_img img{
     position: absolute;
     left: 23px;
     top: 115px;
 }
+.swiper-wrapper .swiper-slide .slide-box .renewal_img img {
+    position: absolute;
+    left: 23px;
+    top: 115px;
+    width: 270px;
+    height: 150px;
+    border-radius: 10px;
+}
+.swiper-wrapper .swiper-slide .slide-box .mobile_img1 img {
+    position: absolute;
+    left: 66px;
+    top: 114px;
+    width: 74px;
+    height: 163px;
+}
+.swiper-wrapper .swiper-slide .slide-box .mobile_img2 img {
+    position: absolute;
+    left: 176px;
+    top: 114px;
+    width: 74px;
+    height: 163px;
+}
+.swiper-wrapper .swiper-slide .slide-box .event_img img {
+    position: absolute;
+    left: 23px;
+    top: 115px;
+}
+.swiper-navigation {
+    text-align: center;
+    margin-top: 20px;
+}
+.swiper-navigation span {
+    padding: 10px 20px;
+    margin: 0 8px;
+    cursor: pointer;
+}
+.swiper-navigation .swiper-button-prev {
+    position: absolute;
+    left: 1350px;
+    top: 320px;
+    background: #27483E;
+    color: #fff;
+    border: 1px solid #27483E;
+}
+.swiper-navigation .swiper-button-prev:hover {
+    background: #fff;
+    color:  #27483E;
+}
+.swiper-navigation .swiper-button-next {
+    position: absolute;
+    left: 1350px;
+    top: 400px;
+    background: #fff;
+    color: #3A664B;
+    border: 1px solid #3A664B;
+}
+.swiper-navigation .swiper-button-next:hover {
+    background: #3A664B;
+    color: #fff;
+} 
