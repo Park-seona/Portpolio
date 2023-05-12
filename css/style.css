@@ -325,7 +325,7 @@ header .header_box ul.gnb>li:hover>a {
 }
 .swiper-navigation .swiper-button-prev {
     position: absolute;
-    left: 1350px;
+    left: 1315px;
     top: 320px;
     background: #27483E;
     color: #fff;
@@ -337,7 +337,7 @@ header .header_box ul.gnb>li:hover>a {
 }
 .swiper-navigation .swiper-button-next {
     position: absolute;
-    left: 1350px;
+    left: 1315px;
     top: 400px;
     background: #fff;
     color: #3A664B;
