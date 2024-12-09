@@ -240,11 +240,11 @@ header .header_box ul.gnb>li:hover>a {
     width: 270px;
     height: 42px;
     background-color: rgba(195, 211, 187, 0.6);
-    border: 2px solid #FC2BCB;
+    border: 2px solid #1f5fff;
     cursor: pointer;
 }
 .swiper-wrapper .swiper-slide .slide-box .event_btn:hover {
-    background-color: #FC2BCB;
+    background-color: #1f5fff;
     color: #fff;
 }
 .swiper-wrapper .swiper-slide .slide-box .personal_txt {
@@ -309,10 +309,13 @@ header .header_box ul.gnb>li:hover>a {
     width: 74px;
     height: 163px;
 }
-.swiper-wrapper .swiper-slide .slide-box .event_img img {
+.swiper-wrapper .swiper-slide .slide-box .info_img img {
     position: absolute;
     left: 23px;
     top: 115px;
+    width: 270px;
+    height: 150px;
+    border-radius: 10px;
 }
 .swiper-navigation {
     text-align: center;
@@ -347,3 +350,84 @@ header .header_box ul.gnb>li:hover>a {
     background: #3A664B;
     color: #fff;
 } 
+
+/* 미디어 쿼리 */
+
+@media screen and (max-width: 1024px){
+    .wrap {
+        width: 100%;
+    }
+    header {
+        height: auto;
+        padding: 10px;
+        display: flex;
+    }
+    header .header_box {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    header .header_box h1 {
+        float: left;
+        width: 4.0625rem;
+        height: 4rem;
+        margin: 0 auto;
+    }
+    header .header_box h1 img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 4.0625rem;
+        height: 4rem;
+        z-index: 10;
+        /* transition: all 0.5s linear; */
+    }
+    header .header_box h1 img:hover {
+        -ms-transform: scale(1.1); /* IE 9 */
+        -webkit-transform: scale(1.1); /* Safari 3-8 */
+        transform: scale(1.1); 
+        /* transform: rotate(720deg); */
+    }
+    header nav {
+        float: right;
+        width: 830px;
+        padding-top: 29px;
+        padding-right: 406px;
+    }
+    header .header_box ul.gnb {
+        width: 100%;
+        text-align: center;
+    }
+    header .header_box ul.gnb>li {
+        float: left;
+        width: 10%;
+        position: relative;
+        padding-right: 50px;
+        z-index: 10;
+    }
+    header .header_box ul.gnb>li>a {
+        display: block;
+        width: 100%;
+        height: 25px;
+        line-height: 25px;
+        font-size: 17px;
+        color: #9BA695;
+        box-sizing: border-box;
+        border-left: 0;
+    }
+    header .header_box ul.gnb>li:hover>a {
+        font-size: 17px;
+        text-decoration: underline;
+        text-underline-position: under;
+        text-decoration-color: #9BA695;
+    }
+    .swiper-container { 
+        padding-top: 258px;
+        position: relative;
+        display: flex;
+        width: 1550px;
+        margin: 0 auto;
+        height: 600px;
+        overflow: hidden;
+    }
+}
